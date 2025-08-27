@@ -14,7 +14,7 @@ import base64
 from datetime import datetime
 
 # Configuration
-TOKEN = "8406206374:AAE5HK9tFasU1pxSfZZWy1rvkvlUreBDCTo"
+TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 DATA_FILE = "password_data.json"
 KEY_FILE = "secret.key"
 STATS_FILE = "bot_stats.json"  # New file for statistics
